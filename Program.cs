@@ -6,14 +6,16 @@ namespace MilhasParaKm
     {
         static void Main(string[] args)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Descubra quantos quilômetros é determinada quantidade de milhas.");
             string milhas = Console.ReadLine();
-            int milha = Convert.ToInt32(milhas);
-            string kms = "1,609";
-            decimal km = Convert.ToDecimal(kms);
-            decimal resultado = milha * km;
+            double milha = Convert.ToDouble(milhas);
+            double kms = 1.609;
+            double resultado = milha * kms;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(resultado);
             Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }
