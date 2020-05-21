@@ -13,7 +13,7 @@ namespace MilhasParaKm
             double kms = 1.609;
             double resultado = milha * kms;
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(resultado);
+            Console.WriteLine($"{milhas} km é igual a {resultado} milhas");
             Console.ReadKey();
             Console.ForegroundColor = ConsoleColor.Gray;
         }
